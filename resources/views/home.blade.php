@@ -8,7 +8,19 @@
 </head>
 <body>
     
-    <h1>Benvenuto nella {{ $nome_home_page }}</h1>
+    <h1>Benvenuto nella {{ $name_home_page }}</h1>
+
+    <ul>
+
+        @foreach ($array as $name)
+
+        <li>
+            {{ $name }}
+        </li>
+
+        @endforeach
+
+    </ul>
 
 </body>
 </html>

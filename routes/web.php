@@ -15,7 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'nome_home_page' => 'Home di Laravel'
+        'name_home_page' => 'Home di Laravel',
+        'array' => [
+            'Marco',
+            'Luca',
+            'Paolo'
+        ]
     ];
 
     return view('home', $data);
